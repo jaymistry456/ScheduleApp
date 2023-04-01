@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="125.0" prefWidth="1400" spacing="15" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ScheduleApp.Shopping.ShoppingListController">
+    <children>
+        <HBox prefHeight="60.0" prefWidth="1400.0" spacing="20.0">
+            <fx:define>
+                <ToggleGroup fx:id="shoppingGroup" />
+            </fx:define>
+            <children>
+                <Region HBox.hgrow="ALWAYS" />
+                <ToggleButton fx:id="shoppingList" prefHeight="40" prefWidth="150" style="-fx-base: lightgreen; -fx-font-size: 20px;" text="Shopping List" toggleGroup="$shoppingGroup" />
+                <ToggleButton fx:id="wishList" prefHeight="40" prefWidth="150" style="-fx-base: lightpink; -fx-font-size: 20px;" text="Wishlist" toggleGroup="$shoppingGroup" />
+                <ToggleButton fx:id="deletedList" prefHeight="40" prefWidth="150" style="-fx-base: red; -fx-font-size: 20px;" text="Recycle Bin" toggleGroup="$shoppingGroup" />
+                <Region HBox.hgrow="ALWAYS" />
+            </children>
+            <padding>
+                <Insets bottom="0.0" left="5.0" right="5.0" top="20.0" />
+            </padding>
+        </HBox>
+        <HBox prefHeight="50.0" prefWidth="1400.0">
+            <children>
+                <Label fx:id="shoppingListType" />
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="100.0" right="5.0" top="10.0" />
+            </padding>
+        </HBox>
+    </children>
+</VBox>
