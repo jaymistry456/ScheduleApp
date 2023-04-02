@@ -19,7 +19,7 @@ public class ViewShopping {
         newItem = null;
 
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("view-shopping.fxml"));
-        BorderPane root = fxmlLoader.load();
+        BorderPane root = (BorderPane) fxmlLoader.load();
 
 
         Stage secondaryStage = new Stage();
